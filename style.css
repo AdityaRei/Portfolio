@@ -1,0 +1,293 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    background: #3498db;
+    color: #fff;
+    transition: background 0.5s;
+    text-align: center;
+}
+
+header {
+    background: #2c3e50;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+    transition: background 0.3s, transform 0.2s;
+}
+footer {
+    background: #2c3e50;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    transition: transform 0.5s ease-in-out;
+}
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+
+.achievements {
+    background-color: #f1c40f;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.achievements h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #34495e; 
+}
+
+.achievements ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.achievements li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333; 
+}
+
+.achievements {
+    background-color: #f1c40f; 
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+}
+
+.achievements h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #34495e; 
+}
+
+.achievements ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.achievements li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333; 
+}
+
+
+.achievements:hover {
+    transform: scale(1.05); 
+}
+
+.skills {
+    background-color: #2ecc71; 
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skills h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #fff; /* Adjust the text color as needed */
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow skills to wrap to the next row */
+    justify-content: center; /* Center-align the skills horizontally */
+    margin-top: 15px;
+}
+
+.skill {
+    flex: 0 0 calc(33.33% - 20px); /* Three skills per row with spacing */
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 0 10px 10px 0; /* Add spacing between skills */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center; /* Center-align the skill content */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333; /* Adjust the text color as needed */
+}
+
+/* Skill progress bar */
+.skill-progress {
+    background-color: #ccc;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.skill-progress-bar {
+    background-color: #2ecc71; /* Adjust the progress bar color as needed */
+    height: 100%;
+}
+.skill:hover {
+    transform: scale(1.05); /* Scale the skill on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+/* Education Section */
+.education {
+    background-color: #3498db; /* Adjust the background color as needed */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease; /* Add animation */
+}
+
+.education h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #fff; /* Adjust the text color as needed */
+}
+
+.education-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333; /* Adjust the text color as needed */
+}
+
+.education-item p {
+    font-size: 16px;
+    color: #555; /* Adjust the text color as needed */
+    margin: 5px 0;
+}
+
+/* Animation keyframes for fading in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ... (your existing CSS styles) ... */
+
+/* Contact Information Section */
+.contact {
+    background-color: #f39c12; /* Adjust the background color as needed */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease; /* Add animation */
+}
+
+.contact h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #fff; /* Adjust the text color as needed */
+}
+
+.contact-item {
+    font-size: 18px;
+    color: #fff; /* Adjust the text color as needed */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    opacity: 0; /* Start with 0 opacity */
+    animation: fadeInItem 1s ease-in-out forwards; /* Add animation for each item */
+}
+
+.contact-item i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation keyframes for fading in each item */
+@keyframes fadeInItem {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
